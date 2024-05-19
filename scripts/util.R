@@ -15,7 +15,7 @@ as_regulon_network = function(regulons){
 }
 
 
-load_networks = function(network_path, n_tails="two", patt=NULL){
+load_networks = function(network_path, patt=NULL){
     if (file.exists(network_path) && !dir.exists(network_path)){
         # network_path is a file, we load only that network (we'll run regular VIPER)
         network_files = list(network_path)
@@ -29,9 +29,6 @@ load_networks = function(network_path, n_tails="two", patt=NULL){
     networks = sapply(network_files, function(network_file){
         print(network_file)
         network = read_tsv(network_file)
-        if (nrow(network)>1 & n_tails=="one"){
-            network = network %>% mutate(tfmode=abs(tfmode))
-        }
         network = as_regulon_network(network)
         return(network)
     }, simplify=FALSE)
