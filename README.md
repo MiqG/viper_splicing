@@ -14,6 +14,10 @@ git clone https://github.com/MiqG/viper_splicing.git
 ### Requirements
 - [`viper`](https://www.bioconductor.org/packages/release/bioc/html/viper.html)
 
+```{shell}
+mamba install bioconda::bioconductor-viper
+```
+
 ### Usage
 ```{R}
 require(tidyverse)
@@ -42,6 +46,10 @@ print("Done!")
 ## Python (`pyviper` is still under development)
 ### Requirements
 - [`pyviper`](https://github.com/alevax/pyviper)
+
+```{shell}
+pip install viper-in-python
+```
 
 ### Usage
 ```{python}
@@ -79,7 +87,5 @@ protein_activities = protein_activities.to_df().T.reset_index().rename(columns={
 print("Done!")
 ```
 
-## License
-`viper_splicing` is distributed under a XX License (see [LICENSE](https://github.com/MiqG/viper_splicing/blob/main/LICENSE)).
-
 ## Citation
+Anglada-Girotto, M., Moakley, D. F., Zhang, C., Miravet-Verde, S., Califano, A., & Serrano, L. (2024). Disentangling the splicing factor programs underlying complex molecular phenotypes. bioRxiv, 2024-06.
