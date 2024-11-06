@@ -97,5 +97,8 @@ protein_activities = protein_activities.to_df().T.reset_index().rename(columns={
 print("Done!")
 ```
 
+## Issues
+Please, report any issues here: https://github.com/MiqG/viper_splicing/issues
+
 ## Citation
 Anglada-Girotto, M., Moakley, D. F., Zhang, C., Miravet-Verde, S., Califano, A., & Serrano, L. (2024). Disentangling the splicing factor programs underlying complex molecular phenotypes. bioRxiv, 2024-06.
