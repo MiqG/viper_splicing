@@ -15,10 +15,15 @@ git clone https://github.com/MiqG/viper_splicing.git
 - [`viper`](https://www.bioconductor.org/packages/release/bioc/html/viper.html)
 
 ```{shell}
-mamba install bioconda::bioconductor-viper
+mamba create --name viper_env -c bioconda -c conda-forge bioconductor-viper r-tidyverse -y
 ```
 
-### Usage
+### Usage example
+```{shell}
+cd viper_splicing
+R
+```
+
 ```{R}
 require(tidyverse)
 require(viper)
@@ -48,10 +53,15 @@ print("Done!")
 - [`pyviper`](https://github.com/alevax/pyviper)
 
 ```{shell}
-pip install viper-in-python
+pip install viper-in-python pandas scanpy
 ```
 
-### Usage
+### Usage example
+```{shell}
+cd viper_splicing
+python
+```
+
 ```{python}
 import os
 import pandas as pd
